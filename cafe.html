@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Chinar Coffee House | Sample Project</title>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{--sun:#f2c230;--ink:#1d1b4b;--paper:#fbfaf6;--mute:#5b5a78}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--ink);font:400 1.05rem/1.6 "DM Sans",system-ui,sans-serif}
+h1,h2{font-family:"DM Serif Display",Georgia,serif;font-weight:400;line-height:1.05;margin:0}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--ink);outline-offset:3px}
+.wrap{max-width:980px;margin:0 auto;padding:0 1.25rem}
+.hero{background:var(--sun);padding:1.25rem 0 4.5rem}
+.top{display:flex;justify-content:space-between;align-items:center;margin-bottom:4rem}
+.top b{font-family:"DM Serif Display",serif;font-size:1.3rem;font-weight:400}
+.top a{text-decoration:none;font-weight:500;margin-left:1.25rem}
+.hero h1{font-size:clamp(3rem,13vw,8rem);letter-spacing:-.02em;max-width:9ch}
+.hero p{max-width:42ch;font-size:1.2rem;margin:1.5rem 0 2rem}
+.btn{display:inline-block;background:var(--ink);color:#fff;padding:.9rem 1.6rem;border-radius:99px;text-decoration:none;font-weight:700}
+section{padding:4rem 0}
+h2{font-size:clamp(2rem,6vw,3rem);margin-bottom:1.75rem}
+.menu{display:grid;gap:2.5rem 4rem;grid-template-columns:repeat(auto-fit,minmax(280px,1fr))}
+.menu h3{margin:0 0 .75rem;font-size:1.1rem}
+.menu ul{list-style:none;padding:0;margin:0}
+.menu li{display:flex;gap:.5rem;align-items:baseline;padding:.45rem 0}
+.menu li span.d{flex:1;border-bottom:2px dotted #b9b8cc;transform:translateY(-4px)}
+.menu small{display:block;color:var(--mute)}
+.band{background:var(--ink);color:#fff}
+.band .grid{display:grid;gap:2rem;grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
+.band h3{margin:0 0 .5rem;color:var(--sun);font-size:1.1rem}
+.band p{margin:0}
+.visit p{max-width:46ch}
+footer{padding:2rem 0 3rem;color:var(--mute);font-size:.92rem}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<header class="hero">
+  <div class="wrap">
+    <div class="top">
+      <b>Chinar Coffee House</b>
+      <nav aria-label="Main"><a href="#menu">Menu</a><a href="#visit">Visit</a></nav>
+    </div>
+    <h1>Slow coffee, fast friends.</h1>
+    <p>Fresh-roasted coffee, warm parathas, and a corner table with your name on it. Open every day in Wah Cantt.</p>
+    <a class="btn" href="#visit">Find us</a>
+  </div>
+</header>
+
+<main>
+  <section id="menu">
+    <div class="wrap">
+      <h2>Today's menu</h2>
+      <div class="menu">
+        <div>
+          <h3>Coffee</h3>
+          <ul>
+            <li>Espresso<span class="d"></span>Rs 350</li>
+            <li>Flat white<span class="d"></span>Rs 550</li>
+            <li>Iced caramel latte<span class="d"></span>Rs 650</li>
+            <li>Kashmiri chai<span class="d"></span>Rs 400</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Food</h3>
+          <ul>
+            <li>Paratha roll<span class="d"></span>Rs 600</li>
+            <li>Club sandwich<span class="d"></span>Rs 850</li>
+            <li>Chicken karahi bowl<span class="d"></span>Rs 1,100</li>
+            <li>Chocolate brownie<span class="d"></span>Rs 450</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="band">
+    <div class="wrap grid">
+      <div><h3>Roasted weekly</h3><p>Small batches, so every cup tastes fresh.</p></div>
+      <div><h3>Free Wi-Fi</h3><p>Bring your laptop. Stay as long as you like.</p></div>
+      <div><h3>Family seating</h3><p>A quiet section for families and groups.</p></div>
+    </div>
+  </section>
+
+  <section id="visit" class="visit">
+    <div class="wrap">
+      <h2>Come say hello</h2>
+      <p><strong>Hours:</strong> Every day, 9 am to 11 pm<br>
+      <strong>Address:</strong> Main Boulevard, Wah Cantt<br>
+      <strong>Phone:</strong> 0300 0000000</p>
+      <p><a class="btn" href="tel:+920300000000">Call to reserve</a></p>
+    </div>
+  </section>
+</main>
+
+<footer><div class="wrap">Sample project: a made-up cafe designed and built by Ayma Aly. Not a real business.</div></footer>
+</body>
+</html>
