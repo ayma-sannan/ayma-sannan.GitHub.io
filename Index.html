@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ayma Aly | Web Developer</title>
+<meta name="description" content="Portfolio of Ayma Aly, a web developer building fast, mobile-friendly websites.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@500;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#eef2f6; --surface:#ffffff; --ink:#13202b; --muted:#566574;
+  --line:#cfd8e1; --accent:#0b6b5f; --accent-ink:#ffffff;
+}
+@media (prefers-color-scheme:dark){
+  :root{--bg:#0f1820; --surface:#16222d; --ink:#e8eef3; --muted:#9db0bf; --line:#2a3a48; --accent:#5fd0bd; --accent-ink:#0f1820;}
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 1.05rem/1.65 Inter,system-ui,-apple-system,Segoe UI,sans-serif}
+h1,h2,h3{font-family:Sora,system-ui,sans-serif;line-height:1.15;margin:0}
+a{color:var(--accent)}
+:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+.wrap{max-width:960px;margin:0 auto;padding:0 1.25rem}
+header.nav{display:flex;justify-content:space-between;align-items:center;padding:1.25rem 0}
+header.nav strong{font-family:Sora,sans-serif}
+header.nav nav a{margin-left:1.25rem;color:var(--ink);text-decoration:none}
+header.nav nav a:hover{color:var(--accent)}
+.hero{padding:4rem 0 3.5rem}
+.hero h1{font-size:clamp(2.4rem,8vw,5rem);font-weight:700;letter-spacing:-.02em;max-width:14ch}
+.hero p{max-width:52ch;color:var(--muted);margin:1.5rem 0 2rem;font-size:1.15rem}
+.btn{display:inline-block;padding:.85rem 1.5rem;border-radius:8px;background:var(--accent);color:var(--accent-ink);text-decoration:none;font-weight:500}
+.btn.alt{background:transparent;color:var(--ink);border:1.5px solid var(--line);margin-left:.5rem}
+section{padding:3rem 0;border-top:1px solid var(--line)}
+section h2{font-size:1.7rem;margin-bottom:1.5rem}
+.projects{display:grid;gap:1.25rem;grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
+.project{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:1.5rem}
+.project h3{font-size:1.2rem;margin-bottom:.5rem}
+.project p{margin:.25rem 0 1rem;color:var(--muted);font-size:.98rem}
+.tags{display:flex;flex-wrap:wrap;gap:.4rem;padding:0;margin:0 0 1rem;list-style:none}
+.tags li{font-size:.85rem;padding:.2rem .65rem;border:1px solid var(--line);border-radius:99px}
+.skills{display:flex;flex-wrap:wrap;gap:.6rem;padding:0;margin:0;list-style:none}
+.skills li{background:var(--surface);border:1px solid var(--line);padding:.5rem 1rem;border-radius:8px}
+.about p{max-width:62ch}
+footer{padding:2.5rem 0 3rem;border-top:1px solid var(--line);color:var(--muted);font-size:.95rem}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="nav">
+    <strong>Ayma Aly</strong>
+    <nav aria-label="Main">
+      <a href="#work">Work</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <div class="hero">
+      <h1>I build fast websites that work on every phone.</h1>
+      <p>I'm a web developer from Wah Cantt, Pakistan. I turn ideas into clean, responsive websites for small businesses and individuals.</p>
+      <a class="btn" href="#contact">Hire me</a>
+      <a class="btn alt" href="#work">See my work</a>
+    </div>
+
+    <section id="work">
+      <h2>Selected work</h2>
+      <div class="projects">
+        <article class="project">
+          <h3>This portfolio website</h3>
+          <p>Designed and built from scratch. Responsive layout, light and dark mode, keyboard-friendly, and deployed for free.</p>
+          <ul class="tags"><li>HTML</li><li>CSS</li><li>Responsive</li></ul>
+          <a href="https://ayma-sannan.github.io">View live site</a>
+        </article>
+      </div>
+    </section>
+
+    <section id="skills">
+      <h2>Skills</h2>
+      <ul class="skills">
+        <li>HTML5</li><li>CSS3</li><li>JavaScript</li><li>Responsive design</li><li>Git and GitHub</li>
+      </ul>
+    </section>
+
+    <section id="about" class="about">
+      <h2>About me</h2>
+      <p>I'm a self-taught web developer who enjoys making simple, clear websites. I focus on clean code, mobile-first layouts, and fast loading. I'm now taking on my first freelance clients and give each project my full attention.</p>
+    </section>
+
+    <section id="contact">
+      <h2>Let's work together</h2>
+      <p>Tell me about your project and I'll reply within a day.</p>
+      <a class="btn" href="mailto:you@example.com">you@example.com</a>
+    </section>
+  </main>
+
+  <footer>&copy; <span id="y"></span> Ayma Aly. Built by hand with HTML and CSS.</footer>
+</div>
+<script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+</body>
+</html>
